@@ -10,7 +10,7 @@
     <div class="caracteristicas">
       <?php
 				while (have_rows('caracteristicas')): the_row();
-					$imagen = get_sub_field('foto');
+					$imagen = get_sub_field('imagen');
           $informacion = get_sub_field('informacion');
 
 			 ?>

@@ -9,12 +9,8 @@
   <section>
 		<div class="slider-wrapper slider">
 			<?php
-
-				while (have_rows('slider_home')): the_row();
-
+				while (have_rows('slider')): the_row();
 					$imagen = get_sub_field('imagen');
-
-
 			 ?>
 
 			<div class="slider--item">
