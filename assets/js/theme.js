@@ -96,7 +96,8 @@ var buildSlider = function buildSlider(x, y) {
 var heroslider = (0, _jquery2['default'])('.slider');
 var paramSlider = {
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    dots: true
 };
 
 buildSlider(heroslider, paramSlider);

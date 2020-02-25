@@ -15,11 +15,13 @@
 
 			 ?>
        <div class="caracteristicas-item">
-         <div class="imagen">
+         <div class="imagen" style="background-image: url(<?php echo $imagen; ?>);">
             <img src="<?php echo $imagen; ?>" alt="">
          </div>
          <div class="informacion">
-           <?php echo $informacion; ?>
+           <div class="informacion--caption">
+              <?php echo $informacion; ?>
+            </div>
          </div>
        </div>
        		<?php endwhile; ?>

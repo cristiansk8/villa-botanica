@@ -1,6 +1,43 @@
-.hero-slider {
+.slider {
+    padding: 0;
+    &.slick-dotted.slick-slider {
+        margin: 0;
+        margin-bottom: 0;
+    }
     img {
-        width: 100%;
-        height: auto;
+        margin: 0 0;
+    }
+    .slick {
+        &-prev,
+        &-next {
+            width: rem(60px);
+            height: rem(80px);
+            z-index: 10;
+        }
+        &-prev {
+            left: rem(30px);
+            @include iconBg('../img/icons/arrow-left.svg');
+        }
+        &-next {
+            right: rem(30px);
+            @include iconBg('../img/icons/arrow-right.svg');
+        }
+        &-dots {
+            bottom: rem(50px);
+            z-index: 10;
+            li {
+                button {
+                    border-radius: 100%;
+                    width: rem(15px);
+                    height: rem(15px);
+                    background-color: rgba($white, 0.5);
+                }
+                &.slick-active {
+                    button {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
     }
 }

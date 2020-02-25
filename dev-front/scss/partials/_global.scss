@@ -1,9 +1,9 @@
 body {
-    ul,
-    ol,
-    p {
-        font-family: $rg;
-        font-size: rem(16px);
-        margin: inherit;
+    font-family: $rg;
+    font-size: rem(16px);
+    margin: inherit;
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }

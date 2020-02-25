@@ -1,0 +1,74 @@
+.caracteristicas {
+    &-item {
+        @include mq('md') {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &:nth-child(even) {
+            @include mq('md') {
+                flex-direction: row-reverse;
+            }
+        }
+        .imagen,
+        .informacion {
+            width: 100%;
+            @include mq('md') {
+                width: 50%;
+            }
+        }
+        .imagen {
+            @include bgcover;
+            min-height: rem(300px);
+            @include mq('md') {
+                min-height: rem(650px);
+            }
+            img {
+                display: none;
+            }
+        }
+        .informacion {
+            padding: rem(20px);
+            position: relative;
+            @include bgcover;
+            &--caption {
+                @include mq('md') {
+                    width: 75%;
+                    @include center('both');
+                }
+                h2 {
+                    color: $orange;
+                    font-family: $mar;
+                    text-transform: uppercase;
+                    @include mq('md') {
+                        @include font(45px);
+                    }
+                }
+            }
+        }
+        &:nth-child(1) {
+            .informacion {
+                background-image: url('../img/bgs/bg-1.jpg');
+            }
+        }
+        &:nth-child(2) {
+            .informacion {
+                background-image: url('../img/bgs/bg-2.jpg');
+            }
+        }
+        &:nth-child(3) {
+            .informacion {
+                background-image: url('../img/bgs/bg-3.jpg');
+            }
+        }
+        &:nth-child(4) {
+            .informacion {
+                background-image: url('../img/bgs/bg-4.jpg');
+            }
+        }
+        &:nth-child(5) {
+            .informacion {
+                background-image: url('../img/bgs/bg-5.jpg');
+            }
+        }
+    }
+}
