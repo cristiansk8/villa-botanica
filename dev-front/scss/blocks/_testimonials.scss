@@ -1,0 +1,31 @@
+.testimonios {
+    padding: rem(30px);
+    background-image: url('../img/bgs/bg-threes.jpg');
+    @include bgparallax;
+    @include mq('md') {
+        min-height: rem(600px);
+    }
+    &-wrapper {
+        @include wrapper;
+    }
+    &--flex {
+        @include mq('md') {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    }
+    &--item {
+        @include mq('md') {
+            width: 47%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        img {
+            max-width: rem(200px);
+        }
+        .informacion {
+            color: $white;
+        }
+    }
+}

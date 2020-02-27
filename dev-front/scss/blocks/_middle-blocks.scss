@@ -18,6 +18,7 @@
         }
         .imagen {
             @include bgcover;
+            background-color: $gray;
             min-height: rem(300px);
             @include mq('md') {
                 min-height: rem(650px);

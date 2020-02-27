@@ -1,0 +1,36 @@
+.formulario {
+    padding: rem(25px);
+    @include mq('md') {
+        padding: rem(45px) 0;
+    }
+    &--wrapper {
+        @include wrapper;
+        max-width: rem(960px);
+        text-align: center;
+    }
+    h2 {
+        color: $orange;
+        text-transform: uppercase;
+        @include mq('md') {
+            @include font(54px);
+        }
+    }
+    .formulario-contacto {
+        display: flex;
+        margin: 0 auto;
+        max-width: rem(700px);
+        >p {
+            flex: 1 1 0;
+            input {
+                width: 100%;
+                &.wpcf7-submit {
+                    background-color: $orange;
+                    color: $white;
+                    text-transform: uppercase;
+                    border-radius: 0;
+                    border: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.bienvenido {
+    @include bgcover;
+    background-color: $gray;
+    position: relative;
+    padding: rem(20px);
+    @include mq('md') {
+        padding: 0;
+        min-height: rem(600px);
+    }
+    &-content {
+        max-width: 75%;
+        margin: 0 auto;
+        color: $white;
+        text-align: center;
+        img {
+            display: inline-block;
+        }
+        @include mq('md') {
+            @include center('both');
+        }
+        h1 {
+            line-height: 1;
+            @include mq('md') {
+                @include font(67px);
+            }
+        }
+        p {
+            line-height: 1;
+        }
+    }
+}
