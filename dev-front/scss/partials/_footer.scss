@@ -1,0 +1,54 @@
+.site-footer {
+    background-color: $cream;
+    color: $gray-2;
+    a {
+        color: $gray-2;
+    }
+    .widget_text {
+        h4 {
+            @include font(30px);
+            text-align: center;
+            @include mq('md') {
+                text-align: left;
+            }
+        }
+        p {
+            text-align: center;
+            @include mq('md') {
+                text-align: left;
+            }
+        }
+        ul {
+            display: block;
+            padding: rem(12px) 0;
+            text-align: center;
+            li {
+                display: inline-block;
+                margin: 0 rem(8px);
+                i {
+                    @include font(30px);
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+        span {
+            &.bottom-icon {
+                display: inline-block;
+                width: rem(81px);
+                height: rem(74px);
+                @include iconBg('../img/icons/orchid.svg');
+            }
+        }
+        &.text-3 {
+            h4,
+            p {
+                text-align: center;
+                @include mq('md') {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

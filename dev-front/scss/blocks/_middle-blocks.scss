@@ -44,6 +44,12 @@
                         @include font(45px);
                     }
                 }
+                p {
+                    @include font(18px);
+                    @include mq('md') {
+                        @include font(24px);
+                    }
+                }
             }
         }
         &:nth-child(1) {

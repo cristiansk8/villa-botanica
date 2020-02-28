@@ -20,8 +20,18 @@
         }
         h1 {
             line-height: 1;
+            text-align: center;
+            display: block;
             @include mq('md') {
                 @include font(67px);
+            }
+            &::before {
+                content: "";
+                margin: rem(16px) auto;
+                display: block;
+                width: rem(81px);
+                height: rem(74px);
+                @include iconBg('../img/icons/orchid-white.svg');
             }
         }
         p {

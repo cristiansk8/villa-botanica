@@ -15,19 +15,35 @@
             @include font(54px);
         }
     }
+    &--descripcion {
+        margin: rem(16px) auto;
+        max-width: rem(600px);
+        p {
+            @include font(18px);
+            @include mq('md') {
+                @include font(24px);
+            }
+        }
+    }
     .formulario-contacto {
         display: flex;
+        flex-wrap: wrap;
         margin: 0 auto;
         max-width: rem(700px);
         >p {
-            flex: 1 1 0;
+            width: 30%;
+            &:first-child {
+                width: 70%;
+            }
             input {
                 width: 100%;
+                padding: rem(10px);
+                border-radius: 0;
+                height: auto;
                 &.wpcf7-submit {
                     background-color: $orange;
                     color: $white;
                     text-transform: uppercase;
-                    border-radius: 0;
                     border: none;
                 }
             }
