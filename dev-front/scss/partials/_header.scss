@@ -26,6 +26,7 @@ body {
                     display: inline-block;
                 }
                 a {
+                    text-transform: uppercase;
                     color: $gray;
                     @include mq('md') {
                         @include font(30px);

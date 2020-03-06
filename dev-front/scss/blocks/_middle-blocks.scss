@@ -37,7 +37,7 @@
                     @include center('both');
                 }
                 h2 {
-                    color: $orange;
+                    color: $green;
                     font-family: $mar;
                     text-transform: uppercase;
                     @include mq('md') {
@@ -54,27 +54,27 @@
         }
         &:nth-child(1) {
             .informacion {
-                background-image: url('../img/bgs/bg-1.jpg');
+                background-image: url('../img/bgs/fondo1.png');
             }
         }
         &:nth-child(2) {
             .informacion {
-                background-image: url('../img/bgs/bg-2.jpg');
+                background-image: url('../img/bgs/fondo2.png');
             }
         }
         &:nth-child(3) {
             .informacion {
-                background-image: url('../img/bgs/bg-3.jpg');
+                background-image: url('../img/bgs/fondo3.png');
             }
         }
         &:nth-child(4) {
             .informacion {
-                background-image: url('../img/bgs/bg-4.jpg');
+                background-image: url('../img/bgs/fondo4.png');
             }
         }
         &:nth-child(5) {
             .informacion {
-                background-image: url('../img/bgs/bg-5.jpg');
+                background-image: url('../img/bgs/fondo5.png');
             }
         }
     }

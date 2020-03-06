@@ -1,6 +1,6 @@
 .testimonios {
     padding: rem(30px);
-    background-image: url('../img/bgs/bg-threes.jpg');
+    background-image: url('../img/bgs/fondoverde1.png');
     @include bgparallax;
     @include mq('md') {
         min-height: rem(600px);
@@ -29,7 +29,7 @@
             max-width: rem(200px);
         }
         .informacion {
-            color: $white;
+            color: $gray;
         }
     }
 }

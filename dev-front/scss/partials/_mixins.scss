@@ -76,7 +76,7 @@ $browser-context: 16; // Default
 @mixin bgparallax {
     background-attachment: fixed;
     background-size: cover;
-    background-position: center top;
+    background-position: unset;
 }
 
 @mixin iconBg($path, $size:100%) {
